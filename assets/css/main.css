@@ -3912,6 +3912,7 @@ input, select, textarea {
 
 		#footer .icons {
 			font-size: 1.25em;
+			margin-left: 3em;
 		}
 
 			#footer .icons a {
@@ -3941,7 +3942,7 @@ input, select, textarea {
 
 				#footer .copyright li:first-child {
 					border-left: 0;
-					margin-left: 0;
+					margin-left: -0.5em;
 					padding-left: 0;
 				}
 
