@@ -4124,3 +4124,8 @@ input, select, textarea {
 	.icon-size {
 		font-size: 45px;
 	}
+
+	.mail-text {
+		position: relative;
+		z-index: -10;
+	}
