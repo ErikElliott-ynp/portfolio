@@ -3577,7 +3577,8 @@ input, select, textarea {
 	.open-info {
 		position: absolute;
 		top: 25%;
-		left: 24.5%;
+		left: 48.5%;
+		margin-left: -29em;
 	}
 
 	#banner {

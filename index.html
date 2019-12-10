@@ -31,8 +31,8 @@
 							Bringing everything together for a seemless user experience</p>
 							<button id="particle-btn" class="button primary">Activate</button>
 					</div>
-				</div>
 					<a href="#two" class="more scrolly">Learn More</a>
+				</div>
 			</section>
 
 			<script>
@@ -43,13 +43,13 @@
 						particlesJS.load('particles-js', 'particlesjs-config.json');
 						btn.innerText = "Shut Down";
 					} else {
+						btn.innerText = "Activate";
 						if (window["pJSDom"] instanceof Array && window["pJSDom"].length > 0) {
 							for (let i = 0; i < window["pJSDom"].length; i++) {
 								window["pJSDom"][i].pJS.fn.vendors.destroypJS();
 							}
 							window["pJSDom"] = [];
 						}
-						btn.innerText = "Activate";
 					}
 				})
 			</script>
