@@ -36,8 +36,15 @@
 			</section>
 
 			<script>
-				document.getElementById('particle-btn').addEventListener('click', () => {
-					particlesJS.load('particles-js', 'particlesjs-config.json')
+				let btn = document.getElementById('particle-btn');
+				btn.addEventListener('click', () => {
+					if (btn.innerText === 'Activate') {
+						particlesJS.load('particles-js', 'particlesjs-config.json');
+						btn.innerText = "Shut Down";
+					} else {
+						particlesJs.load('particles-js', null);
+						btn.innerText = "Activate";
+					}
 				})
 			</script>
 					
