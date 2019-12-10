@@ -36,13 +36,19 @@
 			</section>
 
 			<script>
+				document.title = "Erik Elliott"
 				let btn = document.getElementById('particle-btn');
 				btn.addEventListener('click', () => {
 					if (btn.innerText === 'ACTIVATE') {
 						particlesJS.load('particles-js', 'particlesjs-config.json');
 						btn.innerText = "Shut Down";
 					} else {
-						particlesJS.load('particles-js', "README.txt");
+						if (window["pJSDom"] instanceof Array && window["pJSDom"].length > 0) {
+							for (let i = 0; i < window["pJSDom"].length; i++) {
+								window["pJSDom"][i].pJS.fn.vendors.destroypJS();
+							}
+							window["pJSDom"] = [];
+						}
 						btn.innerText = "Activate";
 					}
 				})
