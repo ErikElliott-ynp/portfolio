@@ -4130,3 +4130,7 @@ input, select, textarea {
 		position: relative;
 		z-index: -10;
 	}
+
+	.d3-item {
+		margin-left: -1.5em;
+	}
