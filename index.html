@@ -38,7 +38,7 @@
 						<p>I'm a Software Engineer focusing on Web Development. <br /> <br />
 							 I've worked on everything from the server to the frontend framework.<br /><br />
 							Bringing everything together for a seemless user experience</p>
-							<button id="particle-btn" class="button primary">Activate</button>
+							<button id="particle-btn" class="button primary">Click me, move your mouse, and click!</button>
 					</div>
 					<a href="#two" class="more scrolly">Learn More</a>
 				</div>
@@ -48,11 +48,11 @@
 				document.title = "Erik Elliott"
 				let btn = document.getElementById('particle-btn');
 				btn.addEventListener('click', () => {
-					if (btn.innerText === 'ACTIVATE') {
+					if (btn.innerText !== 'SHUT DOWN') {
 						particlesJS.load('particles-js', 'particlesjs-config.json');
-						btn.innerText = "Shut Down";
+						setTimeout(() => btn.innerText = "Shut Down", 200);
 					} else {
-						btn.innerText = "Activate";
+						btn.innerText = "Click me, move your mouse, and click!";
 						if (window["pJSDom"] instanceof Array && window["pJSDom"].length > 0) {
 							for (let i = 0; i < window["pJSDom"].length; i++) {
 								window["pJSDom"][i].pJS.fn.vendors.destroypJS();
@@ -77,22 +77,28 @@
 							<section class="spotlight second">
 								<div class="image"></div> <a href="https://patio-fsp.herokuapp.com/#/" target="_blank"><img class="patio" src="images/patio_screenshot.jpg" alt=""></a> <div class="content patio-div">
 									<h2>Patio</h2>
-									<p class="info-p">A single-page app where users connect by posting images or statuses and commenting on friends’ posts. <br />
-										Inspired by Facebook.</p>
+									<p class="info-p">A single-page app where users connect by posting images or statuses and commenting on friends’ posts <br />
+										Inspired by Facebook</p>
+									<a target="_blank" href="https://www.patio-fsp.herokuapp.com" class="live-links">Live</a>
+									<a target="_blank" href="https://github.com/ErikElliott-ynp/Patio-FSP" class="github-links">Github</a>
 								</div>
 							</section>
 							<section class="spotlight third">
 								<div class="image"></div> <a href="https://weave-mern.herokuapp.com/#/" target="_blank"> <img class="weave" src="images/weave_main.jpg" >  </a> <div class="content weave-div">
 									<h2>Weave</h2>
 									<p class="weave-p">An API driven dashboard where users can resize, drag and drop, and interact with multiple social media interfaces
-									simultaneously.</p>
+									simultaneously</p>
+									<a target="_blank" href="https://weave-mern.herokuapp.com/" class="live-links">Live</a>
+									<a target="_blank" href="https://github.com/ErikElliott-ynp/Weave" class="github-links">Github</a>
 								</div>
 							</section>
 							<section class="spotlight fourth">
 								<div class="image"></div> <a href="https://erikelliott-ynp.github.io/" target="_blank"><img class="happ-map" src="images/happ-map.jpg" alt="" /></a> <div class="content patio-div">
 									<h2>Happ Maps</h2>
-									<p class="weave-p">A data visualization which utilized D3 to create maps that illustrated different happiness levels of US metropolitan
-									areas.</p>
+									<p class="weave-p">A data visualization which utilizing D3 to create maps illustrating the different happiness levels of US metropolitan
+									areas</p>
+									<a target="_blank" href="https://erikelliott-ynp.github.io/" class="live-links">Live</a>
+									<a target="_blank" href="https://github.com/ErikElliott-ynp/hap-map" class="github-links">Github</a>
 								</div>
 							</section>
 						</section>

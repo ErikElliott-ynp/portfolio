@@ -159,7 +159,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -4028,6 +4028,11 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	.button.primary {
+		max-width: 37em;
+		outline: none;
+	}
+
 	.first {
 		background-image: url(../../images/dark-mont.jpeg);
 		background-repeat: no-repeat;
@@ -4133,4 +4138,13 @@ input, select, textarea {
 
 	.d3-item {
 		margin-left: -1.5em;
+	}
+
+	.live-links {
+		margin-right: 15px;
+		font-size: 16px;
+	}
+
+	.github-links {
+		font-size: 16px;
 	}
